@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ชำระเงิน - ร้านชาเรืองเดช</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>ชำระเงิน</h1>
+    </header>
+
+    <section class="cart-container">
+        <h2>ข้อมูลสำหรับการจัดส่ง</h2>
+        <form id="order-form">
+            <label for="customer-name">ชื่อ-นามสกุล</label>
+            <input type="text" id="customer-name" required>
+
+            <label for="customer-phone">เบอร์โทรศัพท์</label>
+            <input type="tel" id="customer-phone" required>
+
+            <label for="customer-address">ที่อยู่จัดส่ง</label>
+            <textarea id="customer-address" required></textarea>
+        </form>
+        <h2>รายการสินค้าในตะกร้า</h2>
+        <div class="cart-items"></div>
+        <h3 class="total-price">ยอดรวม: 0 บาท</h3>
+        <button type="submit" class="confirm-order-btn" onclick="confirmOrder()">ยืนยันการสั่งซื้อ</button>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
