@@ -10,16 +10,6 @@ body {
     align-items: center;
 }
 
-h1,
-h2,
-h3 {
-    color: #5c4033;
-}
-
-h1 {
-    margin-left: 20px;
-}
-
 nav {
     background-color: #5c4033;
     width: 100%;
@@ -31,6 +21,7 @@ nav {
 
 nav h1 {
     color: white;
+    margin-left: 20px;
     font-size: 2em;
 }
 
@@ -147,12 +138,16 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+.cart-container h2 {
+    color: #3e2a1a;
+}
+
 .cart-container button {
     font-family: 'Chakra Petch', serif;
 }
 
 .cart-container button:hover {
-    background-color: #63452d;
+    background-color: #795638;
 }
 
 .cart-items {
@@ -236,21 +231,6 @@ nav ul li a:hover {
     cursor: pointer;
     border-radius: 10px;
     transition: background-color 0.3s ease;
-}
-
-.btn {
-    display: inline-block;
-    background: #5c4033;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background: #3f2c24;
 }
 
 footer {
